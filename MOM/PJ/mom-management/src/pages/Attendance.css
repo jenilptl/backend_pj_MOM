@@ -1,0 +1,16 @@
+.attendance-page {
+  padding: 24px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.attendance-page h3 {
+  color: var(--primary);
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+/* spacing between sections */
+.attendance-page > div {
+  margin-bottom: 20px;
+}

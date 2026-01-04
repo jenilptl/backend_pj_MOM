@@ -1,0 +1,45 @@
+.master-page {
+  padding: 24px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.master-page h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.master-section {
+  margin-bottom: 30px;
+}
+
+.master-section h4 {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.master-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.master-section th,
+.master-section td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 14px;
+}
+
+.master-section th {
+  background-color: #f4f7f8;
+}
+
+.master-note {
+  font-size: 13px;
+  color: #666;
+}

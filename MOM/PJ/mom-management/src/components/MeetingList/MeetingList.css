@@ -1,0 +1,117 @@
+.meeting-list {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.meeting-list h3 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+/* Container */
+.meeting-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Each meeting card */
+.meeting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meeting-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Cancelled meeting */
+.meeting-item.cancelled {
+  opacity: 0.65;
+}
+
+/* Info */
+.meeting-info h4 {
+  margin: 0 0 6px;
+  color: var(--secondary);
+}
+
+.meeting-desc {
+  font-size: 14px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.meeting-date {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* Status badge */
+.meeting-status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #eaf4f3;
+  color: #2A9D8F;
+}
+
+.status-cancelled {
+  background-color: #f6e6e9;
+  color: #6B2737;
+}
+
+/* Actions */
+.meeting-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit button */
+.btn-edit {
+  background-color: #2A9D8F;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-edit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(42, 157, 143, 0.4);
+}
+
+/* Cancel button */
+.btn-cancel {
+  background-color: transparent;
+  color: #6B2737;
+  border: 1px solid #6B2737;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #6B2737;
+  color: white;
+  transform: translateY(-1px);
+}

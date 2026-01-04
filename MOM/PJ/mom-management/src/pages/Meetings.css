@@ -1,0 +1,41 @@
+.meetings-page {
+  padding: 24px 32px 24px 24px; /* extra right padding */
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.meetings-page h3 {
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+/* Layout */
+.meetings-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
+  align-items: flex-start;
+  padding-right: 10px; /* prevents scrollbar overlap */
+}
+
+/* Left side */
+.meetings-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Right side */
+.meetings-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px; /* keeps rounded corners visible */
+}
+
+/* Safety for cards */
+.meetings-right > * {
+  width: 100%;
+  box-sizing: border-box;
+}
