@@ -19,7 +19,6 @@ const Dashboard = ({ meetings }) => {
       <h3>Dashboard</h3>
 
       <div className="dashboard-layout">
-        {/* LEFT SIDE */}
         <div className="dashboard-main">
           <div className="dashboard-cards">
             <div className="dashboard-card">
@@ -38,8 +37,6 @@ const Dashboard = ({ meetings }) => {
             </div>
           </div>
         </div>
-
-        {/* RIGHT SIDE */}
         <MeetingCalendar title="Upcoming Meetings" />
       </div>
     </div>

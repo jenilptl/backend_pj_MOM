@@ -1,7 +1,6 @@
 import "./Profile.css";
 
 const Profile = () => {
-  // Dummy user (later comes from login / API)
   const user = {
     name: "JENIL PATEL",
     role: "Meeting Organizer",
@@ -20,7 +19,6 @@ const Profile = () => {
       <h3>My Profile</h3>
 
       <div className="profile-layout">
-        {/* LEFT: Profile Card */}
         <div className="profile-card">
           <div className="profile-avatar">
             {user.name.charAt(0)}
@@ -37,7 +35,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* RIGHT: Details */}
         <div className="profile-details">
           <div className="detail-section">
             <h5>Basic Information</h5>

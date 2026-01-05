@@ -6,7 +6,6 @@ const MainLayout = () => {
     <>
       <Header />
       <Outlet />
-      {/* Footer can be added here later */}
     </>
   );
 };

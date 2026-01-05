@@ -6,7 +6,6 @@ const Master = () => {
     <div className="master-page">
       <h3>Master Configuration</h3>
 
-      {/* Meeting Types */}
       <div className="master-section">
         <h4>Meeting Types</h4>
         <table>
@@ -29,7 +28,7 @@ const Master = () => {
         </table>
       </div>
 
-      {/* Staff */}
+
       <div className="master-section">
         <h4>Staff</h4>
         <table>
@@ -53,8 +52,6 @@ const Master = () => {
           </tbody>
         </table>
       </div>
-
-      {/* Future masters */}
       <div className="master-note">
         Department and Venue masters will be configured here.
       </div>

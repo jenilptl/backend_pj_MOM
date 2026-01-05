@@ -9,8 +9,6 @@ const Reports = () => {
   return (
     <div className="reports-page">
       <h3>Reports & Analytics</h3>
-
-      {/* Top summary cards */}
       <div className="report-cards">
         <div className="report-card">
           <h4>Total Meetings</h4>
@@ -28,7 +26,6 @@ const Reports = () => {
         </div>
       </div>
 
-      {/* Meeting Summary */}
       <section className="report-section">
         <h4>Meeting Summary Report</h4>
         <p>
@@ -37,7 +34,6 @@ const Reports = () => {
         </p>
       </section>
 
-      {/* Meeting Wise */}
       <section className="report-section">
         <h4>Meeting Wise Report</h4>
         <p>
@@ -46,7 +42,6 @@ const Reports = () => {
         </p>
       </section>
 
-      {/* Export */}
       <section className="report-section export-section">
         <h4>Export Reports</h4>
         <p>You can export reports in Excel or PDF format for record keeping.</p>

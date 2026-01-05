@@ -14,12 +14,11 @@ const Login = () => {
       </button> */}
 
       <div className="login-container">
-        {/* LEFT : BRAND */}
         <div className="login-brand">
           <img src={brandLogo} alt="MOM Brand" />
         </div>
 
-        {/* RIGHT : LOGIN FORM */}
+
         <div className="login-form-box">
           <h3>Sign in to MOM</h3>
 
