@@ -5,12 +5,21 @@ import MarkAttendance from "../components/Attendance/MarkAttendance";
 import AttendanceSummary from "../components/Attendance/AttendanceSummary";
 
 const Attendance = () => {
+  const role = localStorage.getItem("role");
+
   return (
     <div className="attendance-page">
       <h3>Attendance & Participants</h3>
 
-      <AddMembers />
-      <MarkAttendance />
+      {/* Admin / Convener only */}
+      {role !== "Staff" && (
+        <>
+          <AddMembers />
+          <MarkAttendance />
+        </>
+      )}
+
+      {/* Everyone can see summary (staff sees own summary only) */}
       <AttendanceSummary />
     </div>
   );

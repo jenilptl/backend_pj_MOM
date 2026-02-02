@@ -1,71 +1,85 @@
 .calendar-box {
-  background-color: var(--card-bg);
-border: 5px solid #264653; /* dark green highlight */
-  border-radius: 12px;
-  padding: 16px;
-  width: 280px;              /* vertical rectangle */
+  background-color: #ffffff;
+  border: 3px solid #264653;        /* strong but clean */
+  border-radius: 16px;
+  padding: 18px;
+  width: 300px;                     /* vertical card */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
+/* Title */
 .calendar-title {
-  color: var(--primary);
+  color: #264653;
   font-size: 16px;
-  margin-bottom: 12px;
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
+/* List */
 .calendar-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
+/* Each meeting row */
 .calendar-item {
   display: flex;
-  gap: 12px;
-  padding: 10px;
-  border-radius: 8px;
-  background-color: #f8fafb;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #f9fafb;
 }
 
+/* Date block */
 .calendar-date {
-  min-width: 52px;
-  height: 52px;
+  min-width: 56px;
+  height: 56px;
   background-color: #2A9D8F;
-  color: white;
-  border-radius: 8px;
+  color: #ffffff;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
+  text-align: center;
+  line-height: 1.2;
 }
 
+/* Text info */
 .calendar-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 4px;
 }
 
 .calendar-text {
-  font-size: 13px;
-  color: var(--text-dark);
+  font-size: 14px;
+  color: #1f2937;
   margin: 0;
+  line-height: 1.4;
 }
 
+/* Cancelled badge */
 .calendar-badge {
-  margin-top: 4px;
-  font-size: 11px;
-  color: #6B2737;
+  font-size: 12px;
   font-weight: 600;
+  color: #6B2737;
 }
+
+/* Show more button */
 .calendar-toggle {
-  margin-top: 12px;
+  margin-top: 14px;
   background: none;
   border: none;
-  color: var(--secondary);
+  color: #2A9D8F;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  padding: 4px 0;
+  padding: 0;
+  text-align: left;
 }
 
 .calendar-toggle:hover {

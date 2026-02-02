@@ -2,12 +2,31 @@ import { meetingMembers } from "../../data/dummyData";
 import "./AttendanceSummary.css";
 
 const AttendanceSummary = () => {
-  const presentCount = meetingMembers.filter(m => m.IsPresent).length;
-  const absentCount = meetingMembers.filter(m => !m.IsPresent).length;
+  const role = localStorage.getItem("role");
+  const staffId = Number(localStorage.getItem("staffId"));
+
+
+  const relevantAttendance =
+    role === "Admin"
+      ? meetingMembers
+      : meetingMembers.filter((m) => m.StaffID === staffId);
+
+  const presentCount = relevantAttendance.filter(
+    (m) => m.IsPresent
+  ).length;
+
+  const absentCount = relevantAttendance.filter(
+    (m) => !m.IsPresent
+  ).length;
 
   return (
     <div className="attendance-card">
-      <h4>Attendance Summary</h4>
+      <h4>
+        {role === "Admin"
+          ? "Overall Attendance Summary"
+          : "My Attendance Summary"}
+      </h4>
+
       <p>Present: {presentCount}</p>
       <p>Absent: {absentCount}</p>
     </div>

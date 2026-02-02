@@ -41,50 +41,190 @@ export const meetingTypes = [
 export const staff = [
   {
     StaffID: 1,
+    Username: "amit",
+    Password: "amit123",
+    Role: "Convener",
     StaffName: "Amit Sharma",
     MobileNo: "9876543210",
     EmailAddress: "amit@company.com",
-    Remarks: "Project Manager",
+    Remarks: "Meeting Convener",
     Created: "2024-11-01",
     Modified: "2024-11-01"
   },
   {
     StaffID: 2,
+    Username: "neha",
+    Password: "neha123",
+    Role: "Staff",
     StaffName: "Neha Patel",
     MobileNo: "9123456780",
     EmailAddress: "neha@company.com",
-    Remarks: "Developer",
+    Remarks: "Staff Member",
     Created: "2024-11-02",
     Modified: "2024-11-02"
   },
   {
     StaffID: 3,
+    Username: "rahul",
+    Password: "rahul123",
+    Role: "Staff",
     StaffName: "Rahul Verma",
     MobileNo: "9988776655",
     EmailAddress: "rahul@company.com",
-    Remarks: "Tester",
+    Remarks: "Staff Member",
     Created: "2024-11-03",
     Modified: "2024-11-03"
   },
   {
     StaffID: 4,
+    Username: "pooja",
+    Password: "pooja123",
+    Role: "Staff",
     StaffName: "Pooja Mehta",
     MobileNo: "9090909090",
     EmailAddress: "pooja@company.com",
-    Remarks: "HR",
+    Remarks: "Staff Member",
     Created: "2024-11-04",
     Modified: "2024-11-04"
   },
   {
     StaffID: 5,
+    Username: "kunal",
+    Password: "kunal123",
+    Role: "Admin",
     StaffName: "Kunal Joshi",
     MobileNo: "9000011111",
     EmailAddress: "kunal@company.com",
-    Remarks: "Admin",
+    Remarks: "System Administrator",
     Created: "2024-11-05",
     Modified: "2024-11-05"
+  },
+
+  /* -------- Additional Staff -------- */
+
+  {
+    StaffID: 6,
+    Username: "rohit",
+    Password: "rohit123",
+    Role: "Staff",
+    StaffName: "Rohit Kumar",
+    MobileNo: "9012345678",
+    EmailAddress: "rohit@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-06",
+    Modified: "2024-11-06"
+  },
+  {
+    StaffID: 7,
+    Username: "anita",
+    Password: "anita123",
+    Role: "Staff",
+    StaffName: "Anita Desai",
+    MobileNo: "9023456789",
+    EmailAddress: "anita@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-07",
+    Modified: "2024-11-07"
+  },
+  {
+    StaffID: 8,
+    Username: "vikas",
+    Password: "vikas123",
+    Role: "Convener",
+    StaffName: "Vikas Malhotra",
+    MobileNo: "9034567890",
+    EmailAddress: "vikas@company.com",
+    Remarks: "Meeting Convener",
+    Created: "2024-11-08",
+    Modified: "2024-11-08"
+  },
+  {
+    StaffID: 9,
+    Username: "sonal",
+    Password: "sonal123",
+    Role: "Staff",
+    StaffName: "Sonal Shah",
+    MobileNo: "9045678901",
+    EmailAddress: "sonal@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-09",
+    Modified: "2024-11-09"
+  },
+  {
+    StaffID: 10,
+    Username: "deepak",
+    Password: "deepak123",
+    Role: "Staff",
+    StaffName: "Deepak Yadav",
+    MobileNo: "9056789012",
+    EmailAddress: "deepak@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-10",
+    Modified: "2024-11-10"
+  },
+  {
+    StaffID: 11,
+    Username: "meena",
+    Password: "meena123",
+    Role: "Staff",
+    StaffName: "Meena Iyer",
+    MobileNo: "9067890123",
+    EmailAddress: "meena@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-11",
+    Modified: "2024-11-11"
+  },
+  {
+    StaffID: 12,
+    Username: "arjun",
+    Password: "arjun123",
+    Role: "Staff",
+    StaffName: "Arjun Singh",
+    MobileNo: "9078901234",
+    EmailAddress: "arjun@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-12",
+    Modified: "2024-11-12"
+  },
+  {
+    StaffID: 13,
+    Username: "kavya",
+    Password: "kavya123",
+    Role: "Staff",
+    StaffName: "Kavya Nair",
+    MobileNo: "9089012345",
+    EmailAddress: "kavya@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-13",
+    Modified: "2024-11-13"
+  },
+  {
+    StaffID: 14,
+    Username: "suresh",
+    Password: "suresh123",
+    Role: "Staff",
+    StaffName: "Suresh Rao",
+    MobileNo: "9090123456",
+    EmailAddress: "suresh@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-14",
+    Modified: "2024-11-14"
+  },
+  {
+    StaffID: 15,
+    Username: "nisha",
+    Password: "nisha123",
+    Role: "Staff",
+    StaffName: "Nisha Kulkarni",
+    MobileNo: "9101234567",
+    EmailAddress: "nisha@company.com",
+    Remarks: "Staff Member",
+    Created: "2024-11-15",
+    Modified: "2024-11-15"
   }
 ];
+
+
 
 
 /* =========================
@@ -156,10 +296,6 @@ export const meetings = [
 ];
 
 
-/* =========================
-   MEETING MEMBERS (ATTENDANCE)
-========================= */
-
 export const meetingMembers = [
   {
     MeetingMemberID: 1,
@@ -205,6 +341,98 @@ export const meetingMembers = [
     Remarks: "",
     Created: "2025-01-02",
     Modified: "2025-01-02"
+  },
+
+  /* ---------- NEW DATA ---------- */
+
+  {
+    MeetingMemberID: 6,
+    MeetingID: 103,
+    StaffID: 2,
+    IsPresent: true,
+    Remarks: "",
+    Created: "2025-01-03",
+    Modified: "2025-01-03"
+  },
+  {
+    MeetingMemberID: 7,
+    MeetingID: 103,
+    StaffID: 5,
+    IsPresent: true,
+    Remarks: "Admin observer",
+    Created: "2025-01-03",
+    Modified: "2025-01-03"
+  },
+  {
+    MeetingMemberID: 8,
+    MeetingID: 104,
+    StaffID: 1,
+    IsPresent: false,
+    Remarks: "Client visit",
+    Created: "2025-01-04",
+    Modified: "2025-01-04"
+  },
+  {
+    MeetingMemberID: 9,
+    MeetingID: 104,
+    StaffID: 3,
+    IsPresent: true,
+    Remarks: "",
+    Created: "2025-01-04",
+    Modified: "2025-01-04"
+  },
+  {
+    MeetingMemberID: 10,
+    MeetingID: 105,
+    StaffID: 14,
+    IsPresent: true,
+    Remarks: "",
+    Created: "2025-01-05",
+    Modified: "2025-01-05"
+  },
+  {
+    MeetingMemberID: 11,
+    MeetingID: 106,
+    StaffID: 2,
+    IsPresent: false,
+    Remarks: "Sick leave",
+    Created: "2025-01-06",
+    Modified: "2025-01-06"
+  },
+  {
+    MeetingMemberID: 12,
+    MeetingID: 107,
+    StaffID: 1,
+    IsPresent: true,
+    Remarks: "",
+    Created: "2025-01-07",
+    Modified: "2025-01-07"
+  },
+  {
+    MeetingMemberID: 13,
+    MeetingID: 108,
+    StaffID: 3,
+    IsPresent: true,
+    Remarks: "",
+    Created: "2025-01-08",
+    Modified: "2025-01-08"
+  },
+  {
+    MeetingMemberID: 14,
+    MeetingID: 109,
+    StaffID: 5,
+    IsPresent: true,
+    Remarks: "Admin review",
+    Created: "2025-01-09",
+    Modified: "2025-01-09"
+  },
+  {
+    MeetingMemberID: 15,
+    MeetingID: 110,
+    StaffID: 8,
+    IsPresent: false,
+    Remarks: "Remote work",
+    Created: "2025-01-10",
+    Modified: "2025-01-10"
   }
 ];
-

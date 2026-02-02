@@ -8,6 +8,7 @@ import { useState } from "react";
 
 const Meetings = ({ meetings, setMeetings }) => {
   const [selectedMeeting, setSelectedMeeting] = useState(null);
+  const role = localStorage.getItem("role");
 
   const addMeeting = (newMeeting) => {
     setMeetings([
@@ -71,7 +72,10 @@ const Meetings = ({ meetings, setMeetings }) => {
             />
           )}
 
-          <MeetingForm onAddMeeting={addMeeting} />
+          {/* ✅ Add Meeting only for Admin / Convener */}
+          {role !== "Staff" && (
+            <MeetingForm onAddMeeting={addMeeting} />
+          )}
         </div>
       </div>
     </div>
